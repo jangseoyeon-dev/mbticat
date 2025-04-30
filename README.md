@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# 🐾 MBTI Cat Matcher
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+당신의 **MBTI 성격 유형**에 따라 가장 잘 어울리는 고양이를 추천해주는 서비스입니다!  
+성격 유형을 기반으로 귀엽고 개성 넘치는 고양이들과 연결되는 재미를 느껴보세요.  
 
-## Available Scripts
+## 🌟 소개
 
-In the project directory, you can run:
+**MBTI Cat Matcher**는 사용자의 MBTI 유형을 입력받아, 해당 성격과 어울리는 고양이 품종 또는 특징을 가진 고양이를 추천하는 웹 서비스입니다.
 
-### `npm start`
+- 16가지 MBTI 성격 유형을 기반으로 한 고양이 추천
+- 각 고양이에 대한 설명, 이미지, 성격 정보 제공
+- 직관적인 UI로 간편한 사용성
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ 기술 스택
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React (CRA 기반)
+- **UI 프레임워크**: Bootstrap, React-Bootstrap
+- **스타일링**: Styled-components
+- **라우팅**: React Router v6
+- **테스트**: Testing Library (React, Jest, User Event)
+- **기타**: Web Vitals
 
-### `npm test`
+## 📸 주요 기능
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| 기능               | 설명 |
+|------------------|------|
+| MBTI 선택         | 사용자가 자신의 MBTI를 선택 |
+| 고양이 추천       | 해당 MBTI에 맞는 고양이 정보 출력 |
+| 고양이 상세 정보   | 고양이 사진, 특징, 성격 등 보여주기 |
+| 카카오톡 공유하는 기능  | 결과 내용을 카카오톡으로 공유 기능 제공 |
+| 반응형 디자인     | 모바일/PC 환경에서 최적화된 UI 제공 |
 
-### `npm run build`
+## 🐱 예시 결과
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **ISTJ** → 브리티시 쇼트헤어: 조용하고 침착한 성격
+- **ENFP** → 벵갈: 활동적이고 호기심 많은 성격
+- **INFJ** → 러시안블루: 신비롭고 독립적인 분위기
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 프로젝트 구조 (예시)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+├── components/
+│   └── KakaoShareButton.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Question.jsx
+│   ├── Result.jsx
+├── App.js
+└── index.js
+```
 
-### `npm run eject`
+## 🚀 시작 방법
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+# 1. 저장소 클론
+git clone https://github.com/your-username/catmbti.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 2. 의존성 설치
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# 3. 로컬 서버 실행
+npm start
+```
